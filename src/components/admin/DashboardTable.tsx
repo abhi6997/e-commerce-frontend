@@ -33,14 +33,16 @@ const columns: Column<DataType>[] = [
 ];
 
 const DashboardTable = ({ data = [] }: { data: DataType[] }) => {
+  const CustomTable = TableHOC(
+    columns,
+    data,
+    "transaction-box",
+    "Top Transaction",
+    true
+  );
     
   return (
-  <TableHOC
-    columns={columns}
-    data={data}
-    containerClassname="transaction-box"
-    heading="Top Transaction"
-    showPagination={true}
+  <CustomTable
 />)
 
 };

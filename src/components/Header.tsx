@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import { FaSearch, FaShoppingBag, FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 

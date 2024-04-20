@@ -11,7 +11,7 @@ import { useDispatch } from 'react-redux'
 import { userExist, userNotExist } from './redux/reducer/userReducer.ts'
 import { useSelector } from 'react-redux'
 
-import { UserReducerInitialState } from './types/reducerTypes.ts'
+
 import ProtectedRoute from './components/ProtectedRoute.tsx'
 import { RootState } from './redux/store.ts'
 

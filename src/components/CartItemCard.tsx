@@ -17,7 +17,7 @@ const CartItemCard = (
     removeHandler }: CartItemProps) => {
 
 
-  const { photo, productId, name, price, quantity, stock } = cartItem
+  const { photo, productId, name, price, quantity } = cartItem
 
 
 
