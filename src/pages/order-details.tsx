@@ -1,7 +1,7 @@
 
 import { FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import AdminSidebar from "../components/admin/AdminSidebar";
+
 import { OrderItem } from "../types/requestTypes";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
@@ -63,7 +63,7 @@ const orderDetails = () => {
 
   return (
     <div className="admin-container">
-      <AdminSidebar />
+     
       <main className="product-management">
         <section style={{ padding: "2rem" }}>
           <h2>Order Items</h2>
