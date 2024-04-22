@@ -1,7 +1,7 @@
 
 import {  useState } from 'react'
 import { FaSearch, FaShoppingBag, FaSignInAlt, FaUser } from 'react-icons/fa'
-import { VscSignOut, VscSignIn } from "react-icons/vsc";
+import { VscSignOut } from "react-icons/vsc";
 import { Link } from 'react-router-dom'
 
 import { User } from '../types/requestTypes'
