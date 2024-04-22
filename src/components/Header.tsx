@@ -1,6 +1,7 @@
 
 import {  useState } from 'react'
-import { FaSearch, FaShoppingBag, FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
+import { FaSearch, FaShoppingBag, FaSignInAlt, FaUser } from 'react-icons/fa'
+import { VscSignOut, VscSignIn } from "react-icons/vsc";
 import { Link } from 'react-router-dom'
 
 import { User } from '../types/requestTypes'
@@ -45,7 +46,7 @@ const Header = ({ user }: PropsType) => {
             <div>
               {user.role === "admin" && (<Link to={"/admin/dashboard"} onClick={() => setIsOpen(false)}>Admin</Link>)}
               <Link to={"/orders"} onClick={() => setIsOpen(false)}>Orders</Link>
-              <button onClick={logoutHandler}><FaSignOutAlt /></button>
+              <button onClick={logoutHandler}><VscSignOut/></button>
 
             </div>
 
@@ -60,7 +61,7 @@ const Header = ({ user }: PropsType) => {
 
 
       ) : (
-        <Link to={"/login"}><FaSignInAlt /></Link>
+        <Link to={"/login"}><FaSignInAlt/></Link>
       )}
     </nav>
   )

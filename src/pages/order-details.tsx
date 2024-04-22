@@ -62,7 +62,7 @@ const orderDetails = () => {
   const { address, city, state, country, pinCode } = shippingInfo;
 
   return (
-    <div className="admin-container">
+    <div className="order-details-container">
      
       <main className="product-management">
         <section style={{ padding: "2rem" }}>

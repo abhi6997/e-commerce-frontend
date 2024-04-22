@@ -1,0 +1,5 @@
+.order-details-container{
+    @include flex(row,center);
+    width:100%;
+    background-color: rgb(244, 197, 214);
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AiFillFileText } from "react-icons/ai";
+import { FaShopify } from "react-icons/fa";
 import {
   FaChartBar,
   FaChartLine,
@@ -59,7 +60,7 @@ const AdminSidebar = () => {
             : {}
         }
       >
-        <h2>Logo.</h2>
+        <FaShopify style={{width:"60px",height:"60px",color:"red",marginLeft:"40px"}}/>
         <DivOne location={location} />
         <DivTwo location={location} />
         <DivThree location={location} />

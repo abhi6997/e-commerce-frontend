@@ -44,10 +44,14 @@ $color3: rgb(0, 104, 136);
 @import "admin-styles/chart";
 @import "admin-styles/dashboardapp";
 @import "admin-styles/mediaquery";
+@import "order-details.scss";
 
 .header {
   @include flex(row, flex-end, stretch, 1.2rem);
   padding: 1rem;
+  background-color:rgb(222, 219, 219);
+  border-bottom: 1px solid black;
+ 
 
   a {
     color: $color2;
@@ -106,7 +110,12 @@ $color3: rgb(0, 104, 136);
 .admin-container {
   @include grid(1fr 4fr, 2rem);
   height: 100vh;
-  background-color: rgb(247, 247, 247);
+  width:100vw;
+  
+ 
+  
+  
+ 
   > aside {
     width: 100%;
     background-color: white;
