@@ -12,13 +12,12 @@ import { RootState } from "../../redux/store";
 import { Navigate } from "react-router-dom";
 
 import { getLastMonths } from "../../utils/features";
-const userImg =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp";
+
   const {last6Months : months} = getLastMonths();
 
 const Dashboard = () => {
   const {user} = useSelector((state:RootState)=>state.userReducer)
-     const {data,isError,error, isLoading} = useStatisticsQuery(user?._id!);
+     const {data,isError} = useStatisticsQuery(user?._id!);
   
      const statistics = data?.statistics!;
     if (isError) {

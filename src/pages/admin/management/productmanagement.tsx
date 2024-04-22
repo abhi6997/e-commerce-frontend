@@ -6,7 +6,7 @@ import { useDeleteProductMutation, useSingleProductQuery, useUpdateProductMutati
 import { useSelector } from "react-redux";
 import { RootState } from "../../../redux/store";
 import { responseToast } from "../../../utils/features";
-import { Navigate } from "react-router-dom";
+
 
 const Productmanagement = () => {
   const navigate = useNavigate();

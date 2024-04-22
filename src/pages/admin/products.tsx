@@ -50,7 +50,7 @@ const columns: Column<DataType>[] = [
 const Products = () => {
   const { user } = useSelector((state: RootState) => state.userReducer);
 
-  const { data, isError, isLoading, error } = useAllProductsQuery(user?._id!)
+  const { data, isError, error } = useAllProductsQuery(user?._id!)
   const [rows, setRows] = useState<DataType[]>([]);
 
   if (isError) {

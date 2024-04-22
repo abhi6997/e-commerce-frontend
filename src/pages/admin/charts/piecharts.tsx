@@ -5,17 +5,17 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../../redux/store";
 import { usePieQuery } from "../../../redux/api/dashboardApi";
 import { Navigate } from "react-router-dom";
-import { useEffect } from "react";
+
 const PieCharts = () => {
  
   const {user} = useSelector((state:RootState)=>state.userReducer)
-     const {data,isError,error, isLoading} = usePieQuery(user?._id!);
+     const {data,isError} = usePieQuery(user?._id!);
     
 
     
       
     
-  const order = data?.pieCharts.orderFullfillment!;
+
   const categories = data?.pieCharts.EachCategoryPercentage!;
   const stock = data?.pieCharts.stockAvailablity!;
   const revenue = data?.pieCharts.revenueDistribution!;

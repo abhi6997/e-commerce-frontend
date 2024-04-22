@@ -65,7 +65,7 @@ const Cart = () => {
       dispatch(discountApplied(res.data.discountAmount))
       setIsCouponCodeValid(true)
       dispatch(calculatePrice())
-    }).catch((error)=>{ 
+    }).catch(()=>{ 
       dispatch(discountApplied("0"))
       setIsCouponCodeValid(false);
       dispatch(calculatePrice())

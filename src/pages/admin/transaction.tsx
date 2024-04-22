@@ -5,7 +5,7 @@ import AdminSidebar from "../../components/admin/AdminSidebar";
 import TableHOC from "../../components/admin/TableHOC";
 import { useAllOrdersQuery } from "../../redux/api/orderApi";
 import { useSelector } from "react-redux";
-import { UserReducerInitialState } from "../../types/reducerTypes";
+
 import { CustomError } from "../../types/responseTypes";
 import toast from "react-hot-toast";
 import { RootState } from "../../redux/store";

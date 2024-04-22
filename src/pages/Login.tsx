@@ -7,7 +7,7 @@ import toast from 'react-hot-toast'
 import { useLoginMutation } from '../redux/api/userApi'
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query'
 import { MessageResponse } from '../types/responseTypes'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 const Login = () => {
     const [gender, setGender] = useState("")
     const [date, setDate] = useState("")
